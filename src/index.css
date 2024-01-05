@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("/assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr\ Medium.ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("/assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr\ Medium\ Italic.ttf.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("/assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr\ Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("/assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr\ Bold\ Italic.ttf.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("/assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr\ Light.ttf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("/assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr\ Light\ Italic.ttf.ttf");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+body {
+  background: linear-gradient(90deg, hsla(226, 100%, 3%, 1) 0%, hsla(226, 81%, 6%, 1) 80%);
+  background-color: black;
+  background-size: 200%;
+  animation: bg 15s ease infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.header {
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 50px;
+  font-family: "HelveticaNeueCyr";
+  font-weight: bold;
+  color: rgb(192,192,192);
+}
+
+.header > p {
+  margin: 0px;
+}
