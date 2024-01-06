@@ -3,7 +3,6 @@
 
 [ABOUT]
 - Use CSS to make pretty
-- Color SVGs to make them gray/white?
 
 [CONTACT]
 - Personal information object constant which will contain:

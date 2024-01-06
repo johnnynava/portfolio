@@ -65,7 +65,7 @@ const About = () => {
                 <img
                   src={
                     skill === "React Native"
-                      ? "assets/techIcons/ReactNative.svg"
+                      ? "assets/techIcons/React.js.svg"
                       : `assets/techIcons/${skill}.svg`
                   }
                 ></img>
