@@ -5,11 +5,6 @@
 - Use CSS to make pretty
 
 [CONTACT]
-- Personal information object constant which will contain:
-  - E-mail
-  - Phone number
-  - LinkedIn link
-  - Github link
 - Use CSS to make pretty
 
 HEADER
