@@ -39,7 +39,10 @@ body {
   background: linear-gradient(90deg, hsla(226, 100%, 3%, 1) 0%, hsla(226, 81%, 6%, 1) 80%);
   background-color: black;
   background-size: 200%;
-  animation: bg 15s ease infinite;
+  animation: bg 5s ease infinite;
+  font-family: "HelveticaNeueCyr";
+  letter-spacing: 0.5px;
+  margin: 0px;
 }
 
 @keyframes bg {
@@ -54,19 +57,62 @@ body {
   }
 }
 
+.content {
+  display: grid;
+  grid-template-rows: 100vh 1fr 100vh 100vh;
+}
+
+.header,
+.headerScrolled {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+  color: rgb(219, 214, 214);
+  transition: 0.5s;
+  position: fixed;
+}
+
 .header {
+  top: 40px;
+}
+
+.headerScrolled {
+  background-color: hsla(226, 100%, 3%, 0.4);
+  backdrop-filter: blur(50px);
+  top: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+}
+
+.headerLeft > p,
+.headerRight > p{
+  cursor: pointer;
+}
+
+.headerLeft {
+  margin-left: 100px;
+}
+
+.headerRight {
+  display: flex;
+  gap: 50px;
+  margin-right: 100px;
+}
+
+.hero {
   color: white;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 50px;
-  font-family: "HelveticaNeueCyr";
+  font-size: 80px;
   font-weight: bold;
   color: rgb(192,192,192);
 }
 
-.header > p {
+.hero > p {
   margin: 0px;
 }
+

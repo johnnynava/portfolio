@@ -1,3 +1,4 @@
+[PROJECTS]
 - Array of projects which need to contain the following (each is an object):
   - Title
   - Date
@@ -10,19 +11,37 @@
   - Desktop screenshot
   - Phone screenshot (can be null if responsive set to false)
   - Ready or not (can be true or false, if set to true everything except the title will be blurred and it will show "coming soon")
+
+[ABOUT]
 - About me constant which will be a description of me
+
 - Array of skills & tools that contain name (that should be enough)
 - Array of skills & tools that I'm interested in learning that contain name
+
+[CONTACT]
 - Personal information object constant which will contain:
   - E-mail
   - Phone number
   - LinkedIn link
   - Github link
-- Need to add event listener to each of the header buttons to take you to the specific section
-- Need header to go a little up and become blurry once you got a little down (as soon as projects is visible)
+
+HEADER
+!!!!- Need to add event listener to each of the header buttons to take you to the specific section (name should take to top)
+- Make effect (maybe glowing or underline to the header titles on hover (projects, about, etc))
+
+APP
 - Make loading screen in case the page takes a while to load
+-(CSS) Make effect (maybe glowing or underline to all the links in the page e.g. linkedin, github, live demo link, github repo link)
+
+
+PROJECTS, ABOUT
 - Make each of the titles (about and projects to appear from display none to blurry and finally visible when you scroll in visible range)
-- Make name clickable to take you to the top
+
+PROJECTS
 - Make small effect for when mouse goes over project screenshots, the screenshot should be clickable as well and take you to the live demo
-- Make effect (maybe glowing or underline to the header titles (projects, about, etc))
-- Make effect (maybe glowing or underline to all the links in the page e.g. linkedin, github, live demo link, github repo link)
+- Make component for:
+  - header
+  - hero
+  - projects
+  - about
+  - get in touch
