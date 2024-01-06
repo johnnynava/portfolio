@@ -14,7 +14,13 @@ const Header = () => {
   return (
     <div ref={headerDiv} className="header">
       <div className="headerLeft">
-        <p>Johnny Nava</p>
+        <p
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          Johnny Nava
+        </p>
       </div>
       <div className="headerRight">
         <p>Portfolio</p>
