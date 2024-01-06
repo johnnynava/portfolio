@@ -1,23 +1,8 @@
-[PROJECTS]
-- Array of projects which need to contain the following (each is an object):
-  - Title
-  - Date
-  - Subtitle (descriptive title)
-  - Summary (40 words/230 characters maximum)
-  - Technologies (used in the project)
-  - Live Preview Link
-  - Github repository Link
-  - Responsive (true or false)
-  - Desktop screenshot
-  - Phone screenshot (can be null if responsive set to false)
-  - Ready or not (can be true or false, if set to true everything except the title will be blurred and it will show "coming soon")
-
 [ABOUT]
 - About me constant which will be a description of me
-
-[PROJECTS]
 - Array of skills & tools that contain name (that should be enough)
 - Array of skills & tools that I'm interested in learning that contain name
+- Use CSS to make pretty
 
 [CONTACT]
 - Personal information object constant which will contain:
@@ -25,24 +10,19 @@
   - Phone number
   - LinkedIn link
   - Github link
+- Use CSS to make pretty
 
 HEADER
 !!!!- Need to add event listener to each of the header buttons to take you to the specific section (name should take to top)
 - Make effect (maybe glowing or underline to the header titles on hover (projects, about, etc))
 
+After:
 APP
 - Make loading screen in case the page takes a while to load
 -(CSS) Make effect (maybe glowing or underline to all the links in the page e.g. linkedin, github, live demo link, github repo link)
-
-
 PROJECTS, ABOUT
 - Make each of the titles (about and projects to appear from display none to blurry and finally visible when you scroll in visible range)
 
-PROJECTS
+[PROJECTS]
+- Use CSS to make pretty
 - Make small effect for when mouse goes over project screenshots, the screenshot should be clickable as well and take you to the live demo
-- Make component for:
-  - header
-  - hero
-  - projects
-  - about
-  - get in touch
