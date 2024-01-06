@@ -3,7 +3,7 @@
   - Title
   - Date
   - Subtitle (descriptive title)
-  - Summary
+  - Summary (40 words/230 characters maximum)
   - Technologies (used in the project)
   - Live Preview Link
   - Github repository Link
@@ -15,6 +15,7 @@
 [ABOUT]
 - About me constant which will be a description of me
 
+[PROJECTS]
 - Array of skills & tools that contain name (that should be enough)
 - Array of skills & tools that I'm interested in learning that contain name
 
