@@ -47,7 +47,7 @@ body {
   background: linear-gradient(90deg, hsla(226, 100%, 3%, 1) 0%, hsla(226, 81%, 6%, 1) 80%);
   background-color: black;
   background-size: 200%;
-  animation: bg 5s ease infinite;
+  animation: bg 1.5s ease infinite;
   font-family: "HelveticaNeueCyr";
   letter-spacing: 0.5px;
 }
@@ -368,4 +368,70 @@ h5 {
   margin-top: 3.5rem;
   margin-bottom: 1.4rem;
   font-size: 32px;
+}
+
+.contact {
+  padding: 92px 0px;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  align-items: center;
+}
+
+.contactTop > h3 {
+  font-size: 60px;
+}
+
+.contactTop > p {
+  color: white;
+  font-size: 60px;
+}
+
+.contactBottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+
+.contactBottomLeft,
+.contactBottomMid,
+.contactBottomRight {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactBottomRight > a { 
+  color: white;
+  text-decoration: none;
+}
+
+.contactBottomRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "linkTitle linkTitle"
+  "linkedin github";
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactBottomRight > p {
+  grid-area: linkTitle;
+}
+
+
+.contactBottomRight > a:nth-child(2) {
+  grid-area: linkedin;
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+.contactBottomRight > a:nth-child(3){
+  grid-area: github;
+  text-align: left;
+  margin-left: 10px;
 }
