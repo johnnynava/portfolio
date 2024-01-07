@@ -106,6 +106,14 @@ body {
   margin-left: 100px;
 }
 
+.headerLeft > p {
+  transition: 0.3s;
+}
+
+.headerLeft > p:hover {
+  text-shadow: 0px 0px 30px white;
+}
+
 .headerRight {
   display: flex;
   gap: 50px;
@@ -116,6 +124,11 @@ body {
   color: rgb(219, 214, 214);
   text-decoration: none;
   align-self: center;
+  transition: 0.3s;
+}
+
+.headerRight > a:hover {
+  text-shadow: 0px 0px 30px white;
 }
 
 .hero {
