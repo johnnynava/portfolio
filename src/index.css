@@ -390,6 +390,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
+  font-size: 1.3rem;
 }
 
 .contactBottomLeft,
@@ -408,7 +409,7 @@ h5 {
 
 .contactBottomRight {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
   "linkTitle linkTitle"
@@ -425,7 +426,7 @@ h5 {
 
 .contactBottomRight > a:nth-child(2) {
   grid-area: linkedin;
-  text-align: right;
+  text-align: left;
   margin-right: 10px;
 }
 
@@ -434,4 +435,10 @@ h5 {
   grid-area: github;
   text-align: left;
   margin-left: 10px;
+}
+
+.contactBottomLeft > p,
+.contactBottomMid > p,
+.contactBottomRight > p {
+  text-align: left;
 }
