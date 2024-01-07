@@ -231,23 +231,14 @@ h5 {
   gap: 0.4166rem;
   font-weight: bold;
   margin-top: 35px;
-  box-shadow: inset 0 0 0 0 rgb(192,192,192);
+  box-shadow: inset 0 0 0 0 rgb(204, 134, 4);
   transition: 0.5s;
 }
 
 .projectBottomRightBottom > a:hover {
-  color: hsla(226, 100%, 3%, 1);
-  box-shadow: inset 15.5vw 0 0 0 rgb(192,192,192);
+  box-shadow: inset 15.5vw 0 0 0 rgb(204, 134, 4);
 }
 
-
-.projectBottomRightBottom > a > img {
-  transition: 0.5s
-}
-
-.projectBottomRightBottom > a:hover > img {
-  filter: invert(1);
-}
 
 .projectBottomRightBottom > a > img {
   height: 1.04166rem;
@@ -307,7 +298,7 @@ h5 {
   gap: 0.4166rem;
   font-weight: bold;
   transition: 0.7s;
-  box-shadow: inset 0 0 0 0 rgb(192,192,192);
+  box-shadow: inset 0 0 0 0 rgb(204, 134, 4);;
 }
 
 .projectsSection > a > img {
@@ -315,17 +306,7 @@ h5 {
 }
 
 .projectsSection > a:hover {
-  color: hsla(226, 100%, 3%, 1);
-  box-shadow: inset 18.8vw 0 0 0 rgb(192,192,192);
-}
-
-.projectsSection > a > img {
-  transition: 0.7s;
-}
-
-.projectsSection > a:hover > img {
-  transition: 0.7s;
-  filter: invert(1);
+  box-shadow: inset 18.8vw 0 0 0 rgb(204, 134, 4);;
 }
 
 .projectComingSoon {
@@ -457,14 +438,14 @@ h5 {
 .contactTop > a {
   text-decoration: none;
   color: rgb(192,192,192);
-  box-shadow: inset 0 0 0 0 rgb(192,192,192);
+  box-shadow: inset 0 0 0 0 rgb(204, 134, 4);
   font-size: 60px;
   transition: 1s;
 }
 
 .contactTop > a:hover {
-  color: hsla(226, 100%, 3%, 1);
-  box-shadow: inset 1000px 0 0 0 rgb(192,192,192);
+  color: white;
+  box-shadow: inset 1000px 0 0 0 rgb(204, 134, 4);
 }
 
 .contactBottom {
@@ -492,14 +473,14 @@ h5 {
 
 .contactBottomRight > a { 
   color: rgb(192,192,192);
-  box-shadow: inset 0 0 0 0 rgb(192,192,192);
+  box-shadow: inset 0 0 0 0 rgb(204, 134, 4);
   text-decoration: none;
   transition: 0.3s;
 }
 
 .contactBottomRight > a:hover {
-  color: hsla(226, 100%, 3%, 1);
-  box-shadow: inset 7.5vw 0 0 0 rgb(192,192,192);
+  color: white;
+  box-shadow: inset 7.5vw 0 0 0 rgb(204, 134, 4);
 
 }
 
