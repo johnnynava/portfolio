@@ -1,10 +1,5 @@
-After:
-
 APP
 - Make effect (maybe glowing or underline to the header titles on hover (projects, about, etc))
--(CSS) Make effect (maybe glowing or underline to all the links in the page e.g. linkedin, github, live demo link, github repo link)
-PROJECTS, ABOUT
-- Make each of the titles (about and projects to appear from display none to blurry and finally visible when you scroll in visible range)
 - Make small effect for when mouse goes over project screenshots (anchor:hover)
 
 Mobile: 

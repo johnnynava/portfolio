@@ -10,9 +10,7 @@ const Contact = () => {
       <div className="contactTop">
         <a id="contact"></a>
         <h3>GET IN TOUCH</h3>
-        <a href="mailto: johnnava@zoho.com">
-          <p>{contactObj.email}</p>
-        </a>
+        <a href="mailto: johnnava@zoho.com">{contactObj.email}</a>
       </div>
       <div className="contactBottom">
         <div className="contactBottomLeft">
