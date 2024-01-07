@@ -329,6 +329,11 @@ h5 {
 
 .projectBottomLeft {
   align-self: center;
+  transition: 0.5s;
+}
+
+.projectBottomLeft:hover {
+  box-shadow: 0px 0px 2vw rgb(162, 64, 7);
 }
 
 .projectBottomLeft > a {

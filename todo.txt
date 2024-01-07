@@ -1,7 +1,3 @@
-APP
-- Make effect (maybe glowing or underline to the header titles on hover (projects, about, etc))
-- Make small effect for when mouse goes over project screenshots (anchor:hover)
-
 Mobile: 
 - Make sure event listeners in header work properly
 - Display projects with screenshots (bottomleft) on top and description (bottomright) below
@@ -10,4 +6,4 @@ Mobile:
 - Make font in about and contact smaller§
 
 END:
-- Make loading screen in case the page takes a while to load
+- Make loading screen in case the page takes a while to load (only necessary if I add 3D effects)
