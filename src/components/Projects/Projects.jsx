@@ -60,7 +60,9 @@ const projectsArray = [
 const Projects = () => {
   return (
     <div className="projectsSection">
-      <h2>Projects</h2>
+      <a id="projects">
+        <h2>Projects</h2>
+      </a>
       <div className="projects">
         {projectsArray.map((project, index) => {
           const ProjectBottom = () => {

@@ -23,7 +23,13 @@ const Header = () => {
         </p>
       </div>
       <div className="headerRight">
-        <p>Portfolio</p>
+        <p
+          onClick={() => {
+            window.scrollTo({ top: 700, behavior: "smooth" });
+          }}
+        >
+          Portfolio
+        </p>
         <p>About me</p>
         <p>Contact</p>
       </div>

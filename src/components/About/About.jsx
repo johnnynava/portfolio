@@ -33,7 +33,9 @@ const About = () => {
     <div className="aboutMe">
       <div className="aboutMeTop">
         <div className="aboutMeTopLeft">
-          <h2>About Me</h2>
+          <a id="about">
+            <h2>About Me</h2>
+          </a>
           <p className="summaryText">{aboutMe.summary}</p>
           <h4>Skills & Tools</h4>
         </div>
