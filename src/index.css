@@ -151,6 +151,25 @@ h2, h3, h4, h5 {
 
 h2 {
   font-size: 2.916rem;
+  color: transparent;
+  transition: 0.5s;
+}
+
+h2.visible {
+  color: white;
+  animation: appear 0.5s ease-in;
+}
+
+@keyframes appear {
+  0%{
+    color: transparent;
+  }
+  50%{
+    filter: blur(10px);
+  }
+  100%{
+    color: white;
+  }
 }
 
 h3 {

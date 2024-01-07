@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 const aboutMe = {
   summary:
     "Passionate and detail-oriented Front-End Developer with 5 years of experience in the tech industry as a Network Engineer. Aiming to transition to a full-time Front-End Developer job that will allow me to use my programming and debugging skills to tackle challenges that will provide value to customers and my employer.",
@@ -29,12 +31,29 @@ const aboutMe = {
 };
 
 const About = () => {
+  const h2About = useRef(null);
+
+  useEffect(() => {
+    let viewportHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+    window.addEventListener("scroll", () => {
+      let h2ProjectsInfo = h2About.current.getBoundingClientRect();
+      if (
+        h2ProjectsInfo.bottom > 0 &&
+        h2ProjectsInfo.bottom <= viewportHeight &&
+        h2ProjectsInfo.top >= 0
+      ) {
+        h2About.current.className = "visible";
+      } else h2About.current.className = "";
+    });
+  }, []);
+
   return (
     <div className="aboutMe">
       <a id="aboutMe"></a>
       <div className="aboutMeTop">
         <div className="aboutMeTopLeft">
-          <h2>About Me</h2>
+          <h2 ref={h2About}>About Me</h2>
           <p className="summaryText">{aboutMe.summary}</p>
           <h4>Skills & Tools</h4>
         </div>

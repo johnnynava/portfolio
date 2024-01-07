@@ -1,7 +1,5 @@
-HEADER
-
-
 After:
+
 APP
 - Make effect (maybe glowing or underline to the header titles on hover (projects, about, etc))
 -(CSS) Make effect (maybe glowing or underline to all the links in the page e.g. linkedin, github, live demo link, github repo link)

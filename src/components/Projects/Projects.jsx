@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 const projectsArray = [
   {
     title: "Fashion Store",
@@ -58,10 +60,27 @@ const projectsArray = [
 ];
 
 const Projects = () => {
+  const h2Projects = useRef(null);
+
+  useEffect(() => {
+    let viewportHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+    window.addEventListener("scroll", () => {
+      let h2ProjectsInfo = h2Projects.current.getBoundingClientRect();
+      if (
+        h2ProjectsInfo.bottom > 0 &&
+        h2ProjectsInfo.bottom <= viewportHeight &&
+        h2ProjectsInfo.top >= 0
+      ) {
+        h2Projects.current.className = "visible";
+      } else h2Projects.current.className = "";
+    });
+  }, []);
+
   return (
     <div className="projectsSection">
       <a id="projects"></a>
-      <h2>Projects</h2>
+      <h2 ref={h2Projects}>Projects</h2>
       <div className="projects">
         {projectsArray.map((project, index) => {
           const ProjectBottom = () => {
