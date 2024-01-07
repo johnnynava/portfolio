@@ -7,6 +7,7 @@ const aboutMe = {
     "HTML",
     "CSS",
     "React Testing Library",
+    "React Router",
     "Jest",
     "Vitest",
     "Webpack",
@@ -49,7 +50,9 @@ const About = () => {
                   src={
                     skill === "React Testing Library"
                       ? "assets/techIcons/ReactTestingLibrary.svg"
-                      : `assets/techIcons/${skill}.svg`
+                      : skill === "React Router"
+                        ? `assets/techIcons/ReactRouter.svg`
+                        : `assets/techIcons/${skill}.svg`
                   }
                 ></img>
                 <p>{skill}</p>
