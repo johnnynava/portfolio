@@ -32,7 +32,7 @@ const projectsArray = [
     subtitle: "Javascript Todo List App",
     date: "2023",
     summary:
-      "Made from scratch using pure Javascript. The application allows you to add new projects, delete projects, edit projects, add tasks to each project, deadlines, descriptions, etc. ",
+      "Made from scratch using pure Javascript. The application allows you to add new projects, delete projects, edit projects, add tasks to each project, deadlines, descriptions, etc. This was made before I learned how to do responsive websites so it doesn't look good on mobile.",
     technologies: "Javascript, HTML, CSS, Web Storage API",
     link: "https://johnnynava.github.io/todo-list/",
     githubLink: "https://github.com/johnnynava/todo-list",
@@ -71,6 +71,7 @@ const Projects = () => {
                     <>
                       <img src={project.desktopScreenshot}></img>
                       <img src={project.phoneScreenshot}></img>
+                      <img src="assets/smartphone.png"></img>
                     </>
                   ) : (
                     <img src={project.desktopScreenshot}></img>
@@ -90,12 +91,20 @@ const Projects = () => {
                     <p className="projectDate">{project.date}</p>
                   </div>
                   <div className="projectBottomRightBottom">
-                    <a href={project.link}>
-                      <p>Live Preview</p>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <p>LIVE PREVIEW</p>
                       <img src="assets/link.svg"></img>
                     </a>
-                    <a href={project.githubLink}>
-                      <p>Github Repository</p>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <p>GITHUB REPOSITORY</p>
                       <img src="assets/link.svg"></img>
                     </a>
                   </div>
@@ -131,7 +140,11 @@ const Projects = () => {
           );
         })}
       </div>
-      <a href="https://github.com/johnnynava?tab=repositories">
+      <a
+        href="https://github.com/johnnynava?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <p>My Other Projects</p>
         <img src="assets/link.svg"></img>
       </a>

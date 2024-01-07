@@ -22,8 +22,20 @@ const Contact = () => {
         </div>
         <div className="contactBottomRight">
           <p>Other Links</p>
-          <a href={contactObj.linkedIn}>LinkedIn</a>
-          <a href={contactObj.githubLink}>Github</a>
+          <a
+            href={contactObj.linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href={contactObj.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
         </div>
       </div>
     </div>
