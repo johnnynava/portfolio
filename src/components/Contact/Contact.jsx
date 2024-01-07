@@ -8,6 +8,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contactTop">
+        <a id="contact"></a>
         <h3>GET IN TOUCH</h3>
         <p>{contactObj.email}</p>
       </div>

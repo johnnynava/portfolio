@@ -31,11 +31,10 @@ const aboutMe = {
 const About = () => {
   return (
     <div className="aboutMe">
+      <a id="aboutMe"></a>
       <div className="aboutMeTop">
         <div className="aboutMeTopLeft">
-          <a id="about">
-            <h2>About Me</h2>
-          </a>
+          <h2>About Me</h2>
           <p className="summaryText">{aboutMe.summary}</p>
           <h4>Skills & Tools</h4>
         </div>
@@ -62,7 +61,7 @@ const About = () => {
             );
           })}
         </div>
-        <h4>Some of the Things I'm Interested in Learning</h4>
+        <h4>Some of the Things I&apos;m Interested in Learning</h4>
         <div className="desiredSkills">
           {aboutMe.desiredSkills.map((skill, index) => {
             return (

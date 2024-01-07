@@ -41,6 +41,7 @@
 
 html {
   font-size: 1.44vw;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -108,6 +109,12 @@ body {
   display: flex;
   gap: 50px;
   margin-right: 100px;
+}
+
+.headerRight > a {
+  color: white;
+  text-decoration: none;
+  align-self: center;
 }
 
 .hero {
@@ -294,6 +301,7 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .aboutMeTopLeft > h2 {
@@ -442,3 +450,27 @@ h5 {
 .contactBottomRight > p {
   text-align: left;
 }
+
+#projects,
+#contact {
+  position: relative;
+  visibility: hidden;
+}
+
+#projects {
+  top: -8vw;
+}
+
+#aboutMe {
+  top: -2vw;
+  position: absolute;
+  visibility: hidden;
+}
+
+@media (min-width: 1550px) {
+  #projects {
+    top: -6vw;
+  }
+}
+
+@media (max-width: 767px) {}
