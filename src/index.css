@@ -39,6 +39,10 @@
   margin: 0px;
 }
 
+html {
+  font-size: 1.44vw;
+}
+
 body {
   background: linear-gradient(90deg, hsla(226, 100%, 3%, 1) 0%, hsla(226, 81%, 6%, 1) 80%);
   background-color: black;
@@ -113,7 +117,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 80px;
+  font-size: 3.33rem;
   font-weight: bold;
   color: rgb(192,192,192);
 }
@@ -144,19 +148,19 @@ h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 2.916rem;
 }
 
 h3 {
-  font-size: 65px;
+  font-size: 2.7083rem;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 1.333rem;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .projects, .aboutMe {
@@ -176,24 +180,24 @@ h5 {
 }
 
 .projectTitle {
-  font-size: 50px;
+  font-size: 2.0833rem;
   margin-top: 60px;
 }
 
 .projectSubtitle {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .projectBottomRightTop > p,
 .projectTechnologies,
 .projectDate {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .projectBottomRightBottom > a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 0.833rem;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -221,9 +225,8 @@ h5 {
 
 .projectBottomRight {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-direction: column;
-  padding-bottom: 30px;
 }
 
 .projectBottomRightMiddle {
@@ -254,7 +257,7 @@ h5 {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 1.25rem;
   gap: 10px;
   font-weight: bold;
 }
@@ -264,32 +267,30 @@ h5 {
 }
 
 .projectComingSoon {
-  font-size: 24px;
+  font-size: 1rem;
   color: orange;
 }
 
 .projectBottomLeft {
+  align-self: center;
+}
+
+.projectBottomLeft > a {
   position: relative;
+  display: flex;
 }
 
-.projectBottomLeft > img:nth-child(1) {
+.projectBottomLeft > a > img:nth-child(1) {
   width: 100%;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
-.projectBottomLeft > img:nth-child(2) {
+.projectBottomLeft > a > img:nth-child(2) {
   position: absolute;
-  height: 280px;
+  height: 16.7vw;
   width: auto;
-  top: 90px;
-  right: 10px;
+  top: 5.5vw;
+  right: 0.6vw;
   border-radius: 25px;
-}
-
-.projectBottomLeft > img:nth-child(3) {
-  position: absolute;
-  height: 300px;
-  width: 350px;
-  top: 80px;
-  right: -85px;
+  border: 4px solid black;
 }

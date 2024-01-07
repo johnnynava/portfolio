@@ -69,12 +69,23 @@ const Projects = () => {
                 <div className="projectBottomLeft">
                   {project.isResponsive === true ? (
                     <>
-                      <img src={project.desktopScreenshot}></img>
-                      <img src={project.phoneScreenshot}></img>
-                      <img src="assets/smartphone.png"></img>
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={project.desktopScreenshot}></img>
+                        <img src={project.phoneScreenshot}></img>
+                      </a>
                     </>
                   ) : (
-                    <img src={project.desktopScreenshot}></img>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={project.desktopScreenshot}></img>
+                    </a>
                   )}
                 </div>
                 <div className="projectBottomRight">
