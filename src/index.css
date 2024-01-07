@@ -78,6 +78,7 @@ body {
   justify-content: space-between;
   font-size: 17px;
   color: rgb(219, 214, 214);
+  font-weight: 500;
   transition: 0.5s;
   position: fixed;
   z-index: 99999;
@@ -112,13 +113,12 @@ body {
 }
 
 .headerRight > a {
-  color: white;
+  color: rgb(219, 214, 214);
   text-decoration: none;
   align-self: center;
 }
 
 .hero {
-  color: white;
   height: 100%;
   display: flex;
   align-items: center;
@@ -184,10 +184,17 @@ h5 {
 .projectTitle {
   font-size: 2.0833rem;
   margin-top: 2.5rem;
+  font-weight: bold;
 }
 
 .projectSubtitle {
   font-size: 1rem;
+  color: rgb(192,192,192);
+}
+
+.projectBottomRightTop > p,
+.projectBottomRightMiddle > p {
+  color: rgb(192,192,192);
 }
 
 .projectBottomRightTop > p,
@@ -203,6 +210,8 @@ h5 {
   display: flex;
   align-items: center;
   gap: 0.4166rem;
+  font-weight: bold;
+  margin-top: 35px;
 }
 
 .projectBottomRightBottom > a > img {
@@ -270,7 +279,7 @@ h5 {
 
 .projectComingSoon {
   font-size: 1rem;
-  color: orange;
+  color: rgb(204, 134, 4);
 }
 
 .projectBottomLeft {
@@ -310,7 +319,7 @@ h5 {
 }
 
 .summaryText {
-  color: white;
+  color: rgb(192,192,192);
   font-size: 24px;
 }
 
@@ -370,6 +379,11 @@ h5 {
 
 .desiredSkill > p {
   margin-top: 16.25px;
+  color: rgb(192,192,192);
+}
+
+.skill > p {
+  color: rgb(192,192,192);
 }
 
 .aboutMeBottom > h4 {
@@ -389,8 +403,9 @@ h5 {
   font-size: 60px;
 }
 
-.contactTop > p {
-  color: white;
+.contactTop > a {
+  text-decoration: none;
+  color: rgb(192,192,192);
   font-size: 60px;
 }
 
@@ -408,10 +423,17 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: rgb(192,192,192);
+}
+
+.contactBottomLeft > p:nth-child(1),
+.contactBottomMid > p:nth-child(1),
+.contactBottomRight > p:nth-child(1) {
+  font-weight: bold;
 }
 
 .contactBottomRight > a { 
-  color: white;
+  color: rgb(192,192,192);
   text-decoration: none;
 }
 

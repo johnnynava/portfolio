@@ -11,6 +11,10 @@ PROJECTS, ABOUT
 
 Mobile: 
 - Make sure event listeners in header work properly
+- Display projects with screenshots (bottomleft) on top and description (bottomright) below
+- Decrease padding on all elements
+- Make font in header smaller
+- Make font in about and contact smaller§
 
 END:
 - Make loading screen in case the page takes a while to load
