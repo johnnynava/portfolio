@@ -19,4 +19,4 @@ PROJECTS, ABOUT
 - Make each of the titles (about and projects to appear from display none to blurry and finally visible when you scroll in visible range)
 
 [PROJECTS]
-- Make small effect for when mouse goes over project screenshots, the screenshot should be clickable as well and take you to the live demo
+- Make small effect for when mouse goes over project screenshots (anchor:hover)

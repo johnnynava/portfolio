@@ -143,8 +143,8 @@ h2, h3, h4, h5 {
 .projectsSection,
 .aboutMe,
 .contact {
-  margin-left: 101px;
-  margin-right: 101px;
+  margin-left: 4.2083rem;
+  margin-right: 4.2083rem;
 }
 
 h2 {
@@ -172,7 +172,7 @@ h5 {
   border-bottom: 1px solid lightgray;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.25rem;
 }
 
 .project:nth-child(4) {
@@ -181,7 +181,7 @@ h5 {
 
 .projectTitle {
   font-size: 2.0833rem;
-  margin-top: 60px;
+  margin-top: 2.5rem;
 }
 
 .projectSubtitle {
@@ -200,21 +200,21 @@ h5 {
   font-size: 0.833rem;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.4166rem;
 }
 
 .projectBottomRightBottom > a > img {
-  height: 25px;
+  height: 1.04166rem;
 }
 
 .projects {
-  margin: 60px 0px 30px;
+  margin: 2.5rem 0px 1.25rem;
 }
 
 .projectBottom, .projectBottomBlurred {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 1.25rem;
 }
 
 .projectBottomBlurred {
@@ -225,7 +225,7 @@ h5 {
 
 .projectBottomRight {
   display: flex;
-  gap: 20px;
+  gap: 0.833rem;
   flex-direction: column;
 }
 
@@ -241,14 +241,14 @@ h5 {
 
 .projectBottomRightBottom {
   display: flex;
-  gap: 30px;
+  gap: 1.25rem;
   align-items: center;
 }
 
 
 
 .project {
-  padding-bottom: 50px;
+  padding-bottom: 2.0833rem;
 }
 
 .projectsSection > a {
@@ -256,14 +256,14 @@ h5 {
   text-decoration: none;
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.25rem;
   font-size: 1.25rem;
-  gap: 10px;
+  gap: 0.4166rem;
   font-weight: bold;
 }
 
 .projectsSection > a > img {
-  width: 35px;
+  width: 1.45833rem;
 }
 
 .projectComingSoon {
