@@ -667,6 +667,10 @@ h5 {
     box-shadow: inset 200px 0 0 0 rgb(204, 134, 4);
   }
   
+  .projectComingSoon{
+    font-size: 15px;
+  }
+
   .projectBottomLeft {
     transition: 0s;
   }
