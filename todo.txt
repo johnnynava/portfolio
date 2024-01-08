@@ -1,9 +1,1 @@
-Mobile: 
-- Make sure event listeners in header work properly
-- Display projects with screenshots (bottomleft) on top and description (bottomright) below
-- Decrease padding on all elements
-- Make font in header smaller
-- Make font in about and contact smaller§
-
-END:
-- Make loading screen in case the page takes a while to load (only necessary if I add 3D effects)
+Make 3D stars float in the background (need to learn blender and threejs for this)

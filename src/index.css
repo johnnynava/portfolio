@@ -149,6 +149,11 @@ a > img {
 
 .project {
   color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 2.0833rem;
 }
 
 h2, h3, h4, h5 {
@@ -200,13 +205,6 @@ h5 {
 .projects, .aboutMe {
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-}
-
-.project {
-  border-bottom: 1px solid lightgray;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
 }
 
 .project:nth-child(4) {
@@ -281,7 +279,7 @@ h5 {
 
 .projectBottomRightMiddle {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -293,12 +291,6 @@ h5 {
   display: flex;
   gap: 1.25rem;
   align-items: center;
-}
-
-
-
-.project {
-  padding-bottom: 2.0833rem;
 }
 
 .projectsSection > a {
@@ -319,12 +311,12 @@ h5 {
 }
 
 .projectsSection > a:hover {
-  box-shadow: inset 18.8vw 0 0 0 rgb(204, 134, 4);;
+  box-shadow: inset 18.8vw 0 0 0 rgb(204, 134, 4);
 }
 
 .projectComingSoon {
   font-size: 1rem;
-  color: rgb(204, 134, 4);
+  color: rgb(204, 134, 4) ;
 }
 
 .projectBottomLeft {
@@ -333,7 +325,7 @@ h5 {
 }
 
 .projectBottomLeft:hover {
-  box-shadow: 0px 0px 2vw rgb(162, 64, 7);
+  box-shadow: 0px 0px 2vw rgb(204, 134, 4);
 }
 
 .projectBottomLeft > a {
@@ -496,10 +488,14 @@ h5 {
   transition: 0.3s;
 }
 
-.contactBottomRight > a:hover {
+.contactBottomRight > a:nth-child(2):hover {
   color: white;
   box-shadow: inset 7.5vw 0 0 0 rgb(204, 134, 4);
+}
 
+.contactBottomRight > a:nth-child(3):hover {
+  color: white;
+  box-shadow: inset 6vw 0 0 0 rgb(204, 134, 4);
 }
 
 .contactBottomRight {
@@ -562,4 +558,226 @@ h5 {
   }
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .header {
+    font-size: 10px;
+    transition: none;
+    position: absolute;
+    font-weight: bold;
+  }
+
+  .headerScrolled {
+    display: none;
+  }
+  
+  .headerLeft {
+    margin-left: 20px;
+  }
+
+  .headerLeft > p {
+    transition: 0s;
+  }
+
+  .headerRight {
+    gap: 10px;
+    margin-right: 20px;
+  }
+
+  .headerRight > a {
+    transition: 0s;
+  }
+
+  .hero {
+    font-size: 50px;
+  }
+
+  .hero > p {
+    text-align: center;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  h5 {
+    font-size: 15px;
+  }
+  
+  .project {
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .projectTitle {
+    font-size: 30px;
+  }
+  
+  .projectSubtitle {
+    font-size: 15px;
+  }
+  
+  .projectBottomRightTop > p,
+  .projectDate {
+    font-size: 15px;
+  }
+
+  .projectTechnologies{
+    font-size: 11px;
+  }
+  
+  .projectBottomRightBottom > a {
+    font-size: 12px;
+    margin-top: 5px;
+    transition: 0s;
+  }
+  
+  .projectBottomRightBottom > a:hover {
+    box-shadow: inset 600px 0 0 0 rgb(204, 134, 4);
+  }
+  
+  .projectBottomRightBottom > a > img {
+    height: 15px;
+  }
+  
+  .projectBottom, .projectBottomBlurred {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projectBottomRight {
+    gap: 8px;
+  }
+  
+  .projectBottomRightMiddle {
+    align-items: center;
+  }
+
+  .projectsSection > a {
+    font-size: 18.75px;
+    transition: 0s;
+  }
+  
+  .projectsSection > a > img {
+    width: 21.87px;
+  }
+  
+  .projectsSection > a:hover {
+    box-shadow: inset 200px 0 0 0 rgb(204, 134, 4);
+  }
+  
+  .projectBottomLeft {
+    transition: 0s;
+  }
+  
+  .projectBottomLeft:hover {
+    box-shadow: 0px 0px 4vw rgb(204, 134, 4);
+  }
+  
+  .projectBottomLeft > a > img:nth-child(2) {
+    height: 30vw;
+    top: 14.5vw;
+    right: 1.2vw;
+    border-radius: 10px;
+    border: 3px solid black;
+  }
+
+  .contactTop > h3 {
+    font-size: 38px;
+  }
+  
+  .contactTop > a {
+    font-size: 25px;
+    transition: 0s;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+  
+  .aboutMeTopLeft > h2 {
+    margin-bottom: 30px;
+    font-size: 60px;
+  }
+  
+  .summaryText {
+    font-size: 18px;
+  }
+  
+  .aboutMeTop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutMeTopLeft > h4 {
+    margin: 25px 0rem 0px;
+    font-size: 25px;
+  }
+
+  .aboutMeTopRight > img {
+    display: none;
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .skill, .desiredSkill {
+    font-size: 4.5px;
+    font-weight: bold;
+  }
+  
+  .desiredSkill > img {
+    height: 30px;
+  }
+  
+  .desiredSkill > p {
+    margin-top: 7px;
+  }
+  
+  .aboutMeBottom > h4 {
+    font-size: 25px;
+  }
+
+  .contactBottom {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: left;
+    font-size: 15px;
+    gap: 20px;
+  }
+  
+  .contactBottomLeft,
+  .contactBottomMid,
+  .contactBottomRight {
+    gap: 5px;
+  }
+  
+  .contactBottomRight > a { 
+    transition: 0s;
+  }
+  
+  .contactBottomRight > a:nth-child(2):hover {
+    box-shadow: inset 70px 0 0 0 rgb(204, 134, 4);
+  }
+
+  .contactBottomRight > a:nth-child(3):hover {
+    box-shadow: inset 50px 0 0 0 rgb(204, 134, 4);
+  }
+  
+  .contactBottomRight {
+    gap: 5px;
+  }
+  
+  .contactBottomRight > a:nth-child(2) {
+    margin-right: 0;
+  }
+  
+  
+  .contactBottomRight > a:nth-child(3){
+    margin-left: 0;
+  }
+
+}
