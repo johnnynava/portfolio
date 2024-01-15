@@ -33,6 +33,7 @@ const aboutMe: AboutMe = {
     "Redux",
     "React Native",
     "MongoDB",
+    "Three.js"
   ],
 };
 
@@ -40,10 +41,10 @@ const About: FC = () => {
   const h2About = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    let viewportHeight =
+    const viewportHeight =
       window.innerHeight || document.documentElement.clientHeight;
     window.addEventListener("scroll", () => {
-      let h2ProjectsInfo = h2About.current!.getBoundingClientRect();
+      const h2ProjectsInfo = h2About.current!.getBoundingClientRect();
       if (
         h2ProjectsInfo.bottom > 0 &&
         h2ProjectsInfo.bottom <= viewportHeight &&

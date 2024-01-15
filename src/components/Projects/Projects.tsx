@@ -78,10 +78,10 @@ const Projects: FC = () => {
   const h2Projects = useRef<HTMLHeadingElement>(null!);
 
   useEffect(() => {
-    let viewportHeight =
+    const viewportHeight =
       window.innerHeight || document.documentElement.clientHeight;
     window.addEventListener("scroll", () => {
-      let h2ProjectsInfo = h2Projects.current.getBoundingClientRect();
+      const h2ProjectsInfo = h2Projects.current.getBoundingClientRect();
       if (
         h2ProjectsInfo.bottom > 0 &&
         h2ProjectsInfo.bottom <= viewportHeight &&
