@@ -12,6 +12,7 @@ const aboutMe: AboutMe = {
   currentSkills: [
     "React.js",
     "Javascript",
+    "Typescript",
     "HTML",
     "CSS",
     "React Router",
@@ -27,7 +28,6 @@ const aboutMe: AboutMe = {
     "Linux",
   ],
   desiredSkills: [
-    "Typescript",
     "Node.js",
     "GraphQL",
     "Redux",
