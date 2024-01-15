@@ -49,8 +49,8 @@ const projectsArray: Project[] = [
     subtitle: "Javascript Todo List App",
     date: "2023",
     summary:
-      "Made from scratch using pure Javascript. The application allows you to add new projects, delete projects, edit projects, add tasks to each project, deadlines, descriptions, etc. This was made before I learned how to do responsive websites so it doesn't look good on mobile.",
-    technologies: "Javascript, HTML, CSS, Web Storage API",
+      "Made from scratch using pure JavaScript. The application allows you to add new projects, delete projects, edit projects, add tasks to each project, deadlines, descriptions, etc. This was made before I learned how to do responsive websites so it doesn't look good on mobile.",
+    technologies: "JavaScript, HTML, CSS, Web Storage API",
     link: "https://johnnynava.github.io/todo-list/",
     githubLink: "https://github.com/johnnynava/todo-list",
     isResponsive: false,
