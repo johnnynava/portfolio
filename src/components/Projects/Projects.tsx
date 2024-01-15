@@ -1,6 +1,21 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, FC } from "react";
 
-const projectsArray = [
+
+type Project = {
+  readonly title: string,
+  readonly subtitle: string,
+  readonly date: string,
+  readonly summary: string,
+  readonly technologies: string,
+  readonly link: string | null,
+  readonly githubLink: string | null,
+  readonly isResponsive: boolean,
+  readonly desktopScreenshot: string,
+  readonly phoneScreenshot: string | null,
+  readonly isCompleted: boolean,
+}
+
+const projectsArray: Project[] = [
   {
     title: "Fashion Store",
     subtitle: "Front-End Web Store",
@@ -59,8 +74,8 @@ const projectsArray = [
   },
 ];
 
-const Projects = () => {
-  const h2Projects = useRef(null);
+const Projects: FC = () => {
+  const h2Projects = useRef<HTMLHeadingElement>(null!);
 
   useEffect(() => {
     let viewportHeight =
@@ -90,17 +105,17 @@ const Projects = () => {
                   {project.isResponsive === true ? (
                     <>
                       <a
-                        href={project.link}
+                        href={project.link!}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src={project.desktopScreenshot}></img>
-                        <img src={project.phoneScreenshot}></img>
+                        <img src={project.desktopScreenshot!}></img>
+                        <img src={project.phoneScreenshot!}></img>
                       </a>
                     </>
                   ) : (
                     <a
-                      href={project.link}
+                      href={project.link!}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -123,7 +138,7 @@ const Projects = () => {
                   </div>
                   <div className="projectBottomRightBottom">
                     <a
-                      href={project.link}
+                      href={project.link!}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -131,7 +146,7 @@ const Projects = () => {
                       <img src="assets/link.svg"></img>
                     </a>
                     <a
-                      href={project.githubLink}
+                      href={project.githubLink!}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

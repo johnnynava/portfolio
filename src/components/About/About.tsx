@@ -1,6 +1,12 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, FC } from "react";
 
-const aboutMe = {
+type AboutMe = {
+  readonly summary: string;
+  readonly currentSkills: string[],
+  readonly desiredSkills: string[],
+}
+
+const aboutMe: AboutMe = {
   summary:
     "Passionate and detail-oriented Front-End Developer with 5 years of experience in the tech industry as a Network Engineer. Aiming to transition to a full-time Front-End Developer job that will allow me to use my programming and debugging skills to tackle challenges that will provide value to customers and my employer.",
   currentSkills: [
@@ -30,21 +36,21 @@ const aboutMe = {
   ],
 };
 
-const About = () => {
-  const h2About = useRef(null);
+const About: FC = () => {
+  const h2About = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     let viewportHeight =
       window.innerHeight || document.documentElement.clientHeight;
     window.addEventListener("scroll", () => {
-      let h2ProjectsInfo = h2About.current.getBoundingClientRect();
+      let h2ProjectsInfo = h2About.current!.getBoundingClientRect();
       if (
         h2ProjectsInfo.bottom > 0 &&
         h2ProjectsInfo.bottom <= viewportHeight &&
         h2ProjectsInfo.top >= 0
       ) {
-        h2About.current.className = "visible";
-      } else h2About.current.className = "";
+        h2About.current!.className = "visible";
+      } else h2About.current!.className = "";
     });
   }, []);
 

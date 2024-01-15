@@ -1,10 +1,18 @@
-const contactObj = {
+import { FC } from "react";
+
+type ContactObj = {
+  readonly email: string;
+  readonly linkedIn: string;
+  readonly githubLink: string;
+}
+
+const contactObj: ContactObj = {
   email: "JOHNNAVA@ZOHO.COM",
   linkedIn: "https://www.linkedin.com/in/johnnynavadev/",
   githubLink: "https://github.com/johnnynava",
 };
 
-const Contact = () => {
+const Contact: FC = () => {
   return (
     <div className="contact">
       <div className="contactTop">

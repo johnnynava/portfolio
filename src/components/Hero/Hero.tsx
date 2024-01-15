@@ -1,4 +1,6 @@
-const Hero = () => {
+import { FC } from "react";
+
+const Hero: FC = () => {
   return (
     <div className="hero">
       <p>Johnny Nava</p>
