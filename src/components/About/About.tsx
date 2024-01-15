@@ -25,6 +25,7 @@ const aboutMe: AboutMe = {
     "npm",
     "ESLint",
     "Prettier",
+    "Sass",
     "Linux",
   ],
   desiredSkills: [
