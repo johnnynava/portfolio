@@ -34,7 +34,9 @@ const aboutMe: AboutMe = {
     "Redux",
     "React Native",
     "MongoDB",
-    "Three.js"
+    "Three.js",
+    "PHP",
+    "SQL",
   ],
 };
 

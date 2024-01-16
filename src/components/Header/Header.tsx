@@ -1,13 +1,13 @@
 import { useEffect, useRef, FC } from "react";
 
 const Header: FC = () => {
-  const headerDiv = useRef<HTMLDivElement>(null);
+  const headerDiv = useRef<HTMLDivElement>(null!);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 99) {
-        headerDiv.current!.className = "headerScrolled";
-      } else headerDiv.current!.className = "header";
+        headerDiv.current.className = "headerScrolled";
+      } else headerDiv.current.className = "header";
     });
   }, []);
 
