@@ -35,7 +35,6 @@ const aboutMe: AboutMe = {
     "React Native",
     "MongoDB",
     "Three.js",
-    "PHP",
     "SQL",
   ],
 };
