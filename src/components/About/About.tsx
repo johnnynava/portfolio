@@ -36,6 +36,7 @@ const aboutMe: AboutMe = {
     "MongoDB",
     "Three.js",
     "SQL",
+    "PHP",
   ],
 };
 
