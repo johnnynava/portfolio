@@ -24,19 +24,19 @@ const aboutMe: AboutMe = {
     "Git",
     "npm",
     "ESLint",
-    "Prettier",
     "Sass",
+    "Prettier",
     "Linux",
   ],
   desiredSkills: [
     "Node.js",
+    "MongoDB",
     "GraphQL",
     "Redux",
-    "React Native",
-    "MongoDB",
     "Three.js",
     "SQL",
     "PHP",
+    "React Native",
   ],
 };
 

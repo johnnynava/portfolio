@@ -23,7 +23,7 @@ const Contact: FC = () => {
       <div className="contactBottom">
         <div className="contactBottomLeft">
           <p>Johnny Nava</p>
-          <p>Surrey, United Kingdom</p>
+          <p>United Kingdom</p>
         </div>
         <div className="contactBottomMid">
           <p>Built using</p>
