@@ -11,24 +11,7 @@ const Hero: FC = () => {
 
     const canvas = document.getElementById("heroCanvas");
 
-    const body = document.body;
-    const html = document.documentElement;
-    const root = document.getElementById("root");
-    const height = Math.max(root!.clientHeight, root!.scrollHeight, root!.offsetHeight,
-                            body.clientHeight, body.scrollHeight, body.offsetHeight, 
-                            html.clientHeight, html.scrollHeight, html.offsetHeight );
-    
-    //Debug logs:
-    console.log(root!.clientHeight);
-    console.log(root!.scrollHeight);
-    console.log(root!.offsetHeight);
-    console.log(body.clientHeight);
-    console.log(body.scrollHeight);
-    console.log(body.offsetHeight);
-    console.log(html.clientHeight);
-    console.log(html.scrollHeight);
-    console.log(html.offsetHeight);
-
+    const height = document.getElementById("root")?.offsetHeight
     const renderer = new THREE.WebGLRenderer({
       canvas: canvas!, 
       antialias:true,
@@ -43,15 +26,21 @@ const Hero: FC = () => {
     const mesh = new THREE.Mesh(geometry, basicMaterial)
     scene.add(mesh)
 
+    let myReq: number;
+
     const clock = new THREE.Clock();
     const animate = () => {
     const elapsedTime = clock.getElapsedTime();
       mesh.rotation.x = -elapsedTime*0.02;
       mesh.rotation.y = elapsedTime*0.01;
       renderer.render(scene, camera);
-      window.requestAnimationFrame(animate)
+      myReq = window.requestAnimationFrame(animate)
     }
     animate();
+
+    return() => {
+      window.cancelAnimationFrame(myReq);
+    }
   },[])
 
   return (
