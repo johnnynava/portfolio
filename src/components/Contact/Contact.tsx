@@ -27,7 +27,7 @@ const Contact: FC = () => {
         </div>
         <div className="contactBottomMid">
           <p>Built using</p>
-          <p>React.js and Sass</p>
+          <p>React.js and Three.js</p>
         </div>
         <div className="contactBottomRight">
           <p>Other Links</p>
