@@ -13,14 +13,21 @@ const Hero: FC = () => {
 
     const body = document.body;
     const html = document.documentElement;
-    const rootHeight = document.getElementById("root")?.offsetHeight;
-    const height = Math.max( rootHeight!, body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+    const root = document.getElementById("root");
+    const height = Math.max(root!.clientHeight, root!.scrollHeight, root!.offsetHeight,
+                            body.clientHeight, body.scrollHeight, body.offsetHeight, 
+                            html.clientHeight, html.scrollHeight, html.offsetHeight );
     
     //Debug logs:
-    console.log(document.getElementById("root"));
-    console.log(body);
-    console.log(html);
+    console.log(root!.clientHeight);
+    console.log(root!.scrollHeight);
+    console.log(root!.offsetHeight);
+    console.log(body.clientHeight);
+    console.log(body.scrollHeight);
+    console.log(body.offsetHeight);
+    console.log(html.clientHeight);
+    console.log(html.scrollHeight);
+    console.log(html.offsetHeight);
 
     const renderer = new THREE.WebGLRenderer({
       canvas: canvas!, 
