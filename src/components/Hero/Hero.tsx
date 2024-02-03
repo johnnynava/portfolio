@@ -10,7 +10,17 @@ const Hero: FC = () => {
     camera.position.z = 65;
 
     const canvas = document.getElementById("heroCanvas");
-    const height = document.getElementById("root")?.offsetHeight;
+
+    const body = document.body;
+    const html = document.documentElement;
+    const rootHeight = document.getElementById("root")?.offsetHeight;
+    const height = Math.max( rootHeight!, body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+    
+    //Debug logs:
+    console.log(document.getElementById("root"));
+    console.log(body);
+    console.log(html);
 
     const renderer = new THREE.WebGLRenderer({
       canvas: canvas!, 
