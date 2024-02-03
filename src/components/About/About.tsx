@@ -19,6 +19,7 @@ const aboutMe: AboutMe = {
     "Jest",
     "Vitest",
     "React Testing Library",
+    "Three.js",
     "Webpack",
     "Vite",
     "Git",
@@ -27,16 +28,17 @@ const aboutMe: AboutMe = {
     "Sass",
     "Prettier",
     "Linux",
+    "Python"
   ],
   desiredSkills: [
     "Node.js",
     "MongoDB",
     "GraphQL",
     "Redux",
-    "Three.js",
     "SQL",
     "PHP",
     "React Native",
+    "Go"
   ],
 };
 

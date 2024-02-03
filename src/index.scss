@@ -76,6 +76,13 @@ body {
   }
 }
 
+#heroCanvas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+}
+
 .content {
   display: grid;
   grid-template-rows: 100vh 1fr 100vh 100vh;
