@@ -13,3 +13,5 @@ I initially wanted 3D objects in the background going from left to right and I c
 Playing with the mesh size and material I then got the idea to just make a single big mesh rotate for the effect I wanted and I'm extremely happy with the results.
 
 The biggest challenge for this was setting the canvas height to the document height, it worked in my local server but not on production (perhaps because some resources didn't load before the height was set) but I manage to work around this issue and now resizing the window works too.
+
+Next is replacing the Three.js for a basic CSS animation for the background, the website runs fine on most modern PCs (they need to have decent graphical capabilities) and modern phones but it's laggy on old pcs. 
