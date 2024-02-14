@@ -3,11 +3,15 @@ import * as THREE from "three";
 
 const Hero: FC = () => {
   const [height,setHeight] = useState(document.getElementById("root")!.offsetHeight)
+  const [width, setWidth] = useState(document.getElementById("root")!.offsetHeight)
 
   useEffect(()=>{
     window.addEventListener("scroll", ()=>{
       if(height !== document.getElementById("root")!.offsetHeight){
         setHeight(document.getElementById("root")!.offsetHeight);
+      }
+      if(width != document.getElementById("root")!.offsetWidth){
+        setWidth(document.getElementById("root")!.offsetWidth);
       }
     })
     const scene = new THREE.Scene();
@@ -23,7 +27,7 @@ const Hero: FC = () => {
     alpha: true
     })
     renderer.setClearColor( 0x000000, 0 );
-    renderer.setSize(window.innerWidth,height!);
+    renderer.setSize(width,height!);
 
     const lineColor = 0x564553;
     const geometry = new THREE.SphereGeometry( height/pov, 25, 25 ); 
@@ -42,12 +46,13 @@ const Hero: FC = () => {
       myReq = window.requestAnimationFrame(animate)
     }
     animate();
-    setHeight(document.getElementById("root")!.offsetHeight)
+    setHeight(document.getElementById("root")!.offsetHeight);
+    setWidth(document.getElementById("root")!.offsetWidth);
 
     return() => {
       window.cancelAnimationFrame(myReq);
     }
-  },[height])
+  },[height, width])
 
   return (
     <div className="hero">
