@@ -28,7 +28,8 @@ const aboutMe: AboutMe = {
     "Sass",
     "Prettier",
     "Linux",
-    "Python"
+    "Python",
+    "jQuery"
   ],
   desiredSkills: [
     "Node.js",
