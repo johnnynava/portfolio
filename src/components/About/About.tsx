@@ -2,13 +2,13 @@ import { useEffect, useRef, FC } from "react";
 
 type AboutMe = {
   readonly summary: string;
-  readonly currentSkills: string[],
-  readonly desiredSkills: string[],
-}
+  readonly currentSkills: string[];
+  readonly desiredSkills: string[];
+};
 
 const aboutMe: AboutMe = {
   summary:
-    "Passionate, self-motivated and detail-oriented Front-End Developer with 5 years of experience in the tech industry as a Network Engineer. Aiming to transition to a role that will allow me to pursue my true passion for Software Development and tackle challenges that will provide value to customers and my employer.",
+    "Passionate, self-motivated and detail-oriented Full-Stack Developer with 5 years of experience in the tech industry as a Network Engineer. Aiming to transition to a role that will allow me to pursue my true passion for Software Development and tackle challenges that will provide value to customers and my employer.",
   currentSkills: [
     "React.js",
     "JavaScript",
@@ -29,18 +29,15 @@ const aboutMe: AboutMe = {
     "Prettier",
     "Linux",
     "Python",
-    "jQuery"
-  ],
-  desiredSkills: [
+    "jQuery",
     "Node.js",
     "MongoDB",
-    "GraphQL",
-    "Redux",
     "SQL",
     "PHP",
-    "React Native",
-    "Go"
+    "TailwindCSS",
   ],
+
+  desiredSkills: ["GraphQL", "Redux", "React Native", "Go"],
 };
 
 const About: FC = () => {

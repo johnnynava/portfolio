@@ -1,21 +1,34 @@
 import { useEffect, useRef, FC } from "react";
 
-
 type Project = {
-  readonly title: string,
-  readonly subtitle: string,
-  readonly date: string,
-  readonly summary: string,
-  readonly technologies: string,
-  readonly link: string | null,
-  readonly githubLink: string | null,
-  readonly isResponsive: boolean,
-  readonly desktopScreenshot: string,
-  readonly phoneScreenshot: string | null,
-  readonly isCompleted: boolean,
-}
+  readonly title: string;
+  readonly subtitle: string;
+  readonly date: string;
+  readonly summary: string;
+  readonly technologies: string;
+  readonly link: string | null;
+  readonly githubLink: string | null;
+  readonly isResponsive: boolean;
+  readonly desktopScreenshot: string;
+  readonly phoneScreenshot: string | null;
+  readonly isCompleted: boolean;
+};
 
 const projectsArray: Project[] = [
+  {
+    title: "Gazetteer",
+    subtitle: "Map application",
+    date: "2024",
+    summary:
+      "I made this map application using pure JavaScript for the front-end and PHP as a backend for frontend (BFF)",
+    technologies: "JavaScript, PHP, TailwindCSS",
+    link: "https://shopping-cart-sepia-eight.vercel.app/",
+    githubLink: "https://github.com/johnnynava/Gazetteer",
+    isResponsive: true,
+    desktopScreenshot: "assets/gazetteer/desktop.jpeg",
+    phoneScreenshot: "assets/gazetteer/mobile.jpeg",
+    isCompleted: true,
+  },
   {
     title: "Fashion Store",
     subtitle: "Front-End Web Store",

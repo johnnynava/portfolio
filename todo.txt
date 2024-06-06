@@ -1,1 +1,0 @@
-Make 3D stars float in the background (need to learn blender and threejs for this)
