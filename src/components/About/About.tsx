@@ -35,9 +35,10 @@ const aboutMe: AboutMe = {
     "SQL",
     "PHP",
     "TailwindCSS",
+    "Redux",
   ],
 
-  desiredSkills: ["GraphQL", "Redux", "React Native", "Go"],
+  desiredSkills: ["GraphQL", "React Native", "Go"],
 };
 
 const About: FC = () => {

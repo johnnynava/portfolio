@@ -20,9 +20,9 @@ const projectsArray: Project[] = [
     subtitle: "Map application",
     date: "2024",
     summary:
-      "I made this map application using pure JavaScript for the front-end and PHP as a backend for frontend (BFF)",
+      "I made this map application using pure JavaScript for the front-end and PHP as a backend for frontend (BFF). It allows you to discover different countries and their places of interest (natural, historic, entertainment).",
     technologies: "JavaScript, PHP, TailwindCSS",
-    link: "https://shopping-cart-sepia-eight.vercel.app/",
+    link: "http://johnnynava.free.nf/gazetteer/",
     githubLink: "https://github.com/johnnynava/Gazetteer",
     isResponsive: true,
     desktopScreenshot: "assets/gazetteer/desktop.jpeg",
