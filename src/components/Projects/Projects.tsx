@@ -21,7 +21,7 @@ const projectsArray: Project[] = [
     date: "2024",
     summary:
       "I made this map application using pure JavaScript for the front-end and PHP as a backend for frontend (BFF). It allows you to discover different countries and their places of interest (natural, historic, entertainment).",
-    technologies: "JavaScript, PHP, TailwindCSS",
+    technologies: "JavaScript, LeafletJS, PHP, TailwindCSS",
     link: "http://johnnynava.free.nf/gazetteer/",
     githubLink: "https://github.com/johnnynava/gazetteer",
     isResponsive: true,
