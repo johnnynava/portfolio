@@ -7,8 +7,7 @@ type AboutMe = {
 };
 
 const aboutMe: AboutMe = {
-  summary:
-    "Passionate, self-motivated and detail-oriented Full-Stack Developer with 5 years of experience in the tech industry as a Network Engineer. Aiming to transition to a role that will allow me to pursue my true passion for Software Development and tackle challenges that will provide value to customers and my employer.",
+  summary: "Passionate, self-motivated and detail-oriented Network Engineer.",
   currentSkills: [
     "React.js",
     "JavaScript",

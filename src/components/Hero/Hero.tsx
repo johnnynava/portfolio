@@ -68,7 +68,7 @@ const Hero: FC = () => {
     <div className="hero">
       <canvas id="heroCanvas"></canvas>
       <p>Johnny Nava</p>
-      <p>Full-Stack Developer</p>
+      <p>Network Engineer</p>
     </div>
   );
 };

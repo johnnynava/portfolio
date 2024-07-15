@@ -4,11 +4,11 @@ type ContactObj = {
   readonly email: string;
   readonly linkedIn: string;
   readonly githubLink: string;
-}
+};
 
 const contactObj: ContactObj = {
   email: "JOHNNAVA@ZOHO.COM",
-  linkedIn: "https://www.linkedin.com/in/johnnynavadev/",
+  linkedIn: "https://www.linkedin.com/in/telejohn/",
   githubLink: "https://github.com/johnnynava",
 };
 
